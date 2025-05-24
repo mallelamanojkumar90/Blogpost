@@ -14,6 +14,7 @@ topic_analyzer_agent = get_topic_analyzer_agent()
 idea_generator_agent = get_idea_generator_agent()
 analyze_topic_task = get_analyze_topic_task(topic_analyzer_agent)
 generate_ideas_task = get_generate_ideas_task(idea_generator_agent, analyze_topic_task)
+
 blog_post_ideas_crew = get_blog_post_ideas_crew(
     topic_analyzer_agent,
     idea_generator_agent,
